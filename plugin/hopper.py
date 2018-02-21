@@ -81,7 +81,8 @@ else:
 
 if newPath:
     print("Hopper: Open file: %s" % newPath)
-    vim.command("e " + newPath)
+    vim.command(":w ")
+    vim.command("edit " + newPath)
 else:
     print("Hopper: Cant find counterpart")
 
